@@ -5,7 +5,7 @@ Hdlparse
 
 Hdlparse is a simple package implementing a rudimentary parser for VHDL and Verilog. It is not capable of fully parsing the entire language. Rather, it is meant to extract enough key information from a source file to create generated documentation.
 
-This library is used by the `Symbolator <https://github.com/kevinpt/symbolator>`_ diagram generator.
+This library is forked from `kevinpt <https://github.com/kevinpt/hdlparse>`_ via `zhelnio <https://github.com/zhelnio/hdlparse>`_. The aim of this fork is to provide some bug fixes and additional features to zhelnio's version of Hdlparse. A list of changes is included at the bottom of this README.
 
 For VHDL this library can extract component, subprogram, type, subtype, and constant declarations from a package. For Verilog it can extract module declarations (both 1995 and 2001 syntax).
 
@@ -13,18 +13,14 @@ For VHDL this library can extract component, subprogram, type, subtype, and cons
 Requirements
 ------------
 
-Hdlparse requires either Python 2.7 or Python 3.x and no additional libraries.
-
-The installation script depends on setuptools. The source is written in
-Python 2.7 syntax but will convert cleanly to Python 3 when the installer
-passes it through 2to3.
+Hdlparse requires Python 3.x and no additional libraries. This version of Hdlparse is not compatible with Python2.
 
 
 Download
 --------
 
 You can access the Hdlparse Git repository from `Github
-<https://github.com/kevinpt/hdlparse>`_. You can install direct from PyPI with the "pip"
+<https://github.com/vvvverre/hdlparse>`_. You can install direct from PyPI with the "pip"
 command if you have it available.
 
 Installation
@@ -55,7 +51,7 @@ You can also use ``pip`` to get the latest development code from Github:
 
 .. code-block:: sh
 
-  > pip install --upgrade https://github.com/kevinpt/hdlparse/tarball/master
+  > pip install --upgrade https://github.com/vvvverre/hdlparse/tarball/master
 
 If you manually downloaded a source package or created a clone with Git you can install with the following command run from the base Hdlparse directory:
 
@@ -74,3 +70,13 @@ Documentation
 The full documentation is available online at the `main Hdlparse site
 <http://kevinpt.github.io/hdlparse/>`_.
 
+
+Changes
+-------
+
+A list of changes compared to the upstream is listed here:
+
+* Improved support for VHDL and Verilog generics
+* PEP8 compatible formatting
+* Remove Python2 support
+* Provide debugging information using the Python logging module
