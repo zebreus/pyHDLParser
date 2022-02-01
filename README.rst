@@ -20,7 +20,7 @@ Download
 --------
 
 You can access the Hdlparse Git repository from `Github
-<https://github.com/vvvverre/hdlparse>`_. You can install direct from PyPI with the "pip"
+<https://github.com/hdl/pyhdlparser>`_. You can install direct from PyPI with the "pip"
 command if you have it available.
 
 Installation
@@ -34,24 +34,17 @@ You need to have the Python setuptools installed first. If your OS has a package
 
   > pip install setuptools
 
-The easiest way to install Hdlparse is from `PyPI <https://pypi.python.org/pypi/hdlparse>`_.
-
-.. code-block:: sh
-
-  > pip install --upgrade hdlparse
-
-This will download and install the latest release, upgrading if you already have it installed. If you don't have ``pip`` you may have the ``easy_install`` command available which can be used to install ``pip`` on your system:
+If you don't have ``pip`` you may have the ``easy_install`` command available which can be used to install ``pip`` on your system:
 
 .. code-block:: sh
 
   > easy_install pip
 
-
-You can also use ``pip`` to get the latest development code from Github:
+You can use ``pip`` to get the latest development code from Github:
 
 .. code-block:: sh
 
-  > pip install --upgrade https://github.com/vvvverre/hdlparse/tarball/master
+  > pip install --upgrade https://github.com/hdl/pyhdlparser/tarball/master
 
 If you manually downloaded a source package or created a clone with Git you can install with the following command run from the base Hdlparse directory:
 
