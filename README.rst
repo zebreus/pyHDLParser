@@ -3,6 +3,9 @@
 Hdlparse
 ========
 
+.. IMPORTANT::
+   This repo is no longer maintained. The package is now integrated into `zebreus/symbolator <https://github.com/zebreus/symbolator>`.
+
 Hdlparse is a simple package implementing a rudimentary parser for VHDL and Verilog. It is not capable of fully parsing the entire language. Rather, it is meant to extract enough key information from a source file to create generated documentation.
 
 This library is forked from `kevinpt <https://github.com/kevinpt/hdlparse>`_ via `zhelnio <https://github.com/zhelnio/hdlparse>`_. The aim of this fork is to provide some bug fixes and additional features to zhelnio's version of Hdlparse. A list of changes is included at the bottom of this README.
